@@ -8,25 +8,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Modeler/Musician</p>
-                <h1>Hi, I'm <span>mirko4001</span><br>From Austria</h1>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Modeler & Musician</p>
+            <h1>Hi, I'm <span>mirko4001</span><br>From Austria</h1>
+        </div>
+    </div>
+</div>
+<!-- ABOUT -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/donut.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="text">Hello Guys! My real name is Yazan (16 years old)s and I've visited a <span>musical</span> secondary school, at that age I was already interested in <span>IT</span>. Therefore I entered a high school that's specialized in the department IT. While learning to code, I also picked up the skill modelling in <span>Blender</span></p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Modelling</span><br>Creating 3d Models in Blender</li>
+                        <li><span>Music</span><br>Create Melodies and Songs</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Music Middle School</span><br>In this school I learned a lot of things, mostly musical theory and so on. Although I was pretty good at music and had a passion for playing the piano, something else has caught on. It was programming. Soon enough I knew what my next school I will be visiting</li>
+                        <li><span>Higher Technical Learning Academy</span><br>This school is sort of like a highschool that focuses on the IT-department</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 
 </body>
 </html>
