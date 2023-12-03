@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="models.css">
+    <title>models-subpage</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Image gallery -->
+    <div class="container2">
+
+        <h1>modelling gallery</h1>
+
+        <div class="image-container">
+            <div class="image"><img src="../images/Dagger1.png" alt=""></div>
+            <div class="image"><img src="../images/PC1.png" alt=""></div>
+            <div class="image"><img src="../images/W1.png" alt=""></div>
+            <div class="image"><img src="../images/W2.png" alt=""></div>
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="../images/Dagger1.png" alt="">
+        </div>
+
+    </div>
+
+
+<script>
+
+document.querySelectorAll('.image-container img').forEach(image =>{
+    image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+})
+
+document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>
