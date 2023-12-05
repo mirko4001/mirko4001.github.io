@@ -112,7 +112,8 @@ nav ul li a:hover::after{
     transform: translate(-50%,-50%);
     border: 5px solid white;
     border-radius: 10px;
-    width: 550px;
+    width: 1500px;
+    height: auto;
     object-fit: cover;
 }
 @media (max-width:768px){
