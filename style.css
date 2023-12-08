@@ -162,13 +162,6 @@ nav ul li a:hover::after{
     margin-bottom: 15px;
     color: white;
 }
-.services-list a{
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    margin-top: 20px;
-    display: inline-block;
-}
 .services-list div{
     background-color: #262626;
     padding: 40px;
@@ -258,18 +251,4 @@ nav ul li a:hover::after{
 }
 .work:hover .layer{
     height: 100%;
-}
-.btn{
-    display: block;
-    margin:50px auto;
-    width: fit-content;
-    border: 1px solid #9d8dc2;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background-color: #9d8dc2;
 }
