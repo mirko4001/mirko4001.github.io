@@ -207,7 +207,6 @@ nav ul li a:hover::after{
     display: block;
     transition: transform 0.5s;
 }
-
 .layer p{
     font-size: 20px;
     line-height: 25px;
@@ -311,5 +310,24 @@ nav .fas{
     }
     .about-col-1{
         margin-bottom: 30px;
+    }
+    .layer p{
+        display: none;
+    }
+    .layer a{
+        margin-top: 20;
+        font-size: 12px;
+        line-height: 40px;
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .layer h3{
+        font-size: 20px;
+    }
+    .layer{
+        background: linear-gradient(rgba(0,0,0,0), #9d8dc2);
     }
 }
