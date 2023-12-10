@@ -115,12 +115,15 @@ nav ul li a:hover::after{
     width: 80%;
     object-fit: cover;
 }
-@media (max-width:768px){
+@media (max-width:600px){
     .container2 .popup-image img{
         width: 95%;
     }
     .container2 .image-container .image{
         width: 100%;
         height: auto;
+    }
+    .logo{
+        width: 200px;
     }
 }
