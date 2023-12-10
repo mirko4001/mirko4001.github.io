@@ -13,13 +13,15 @@
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Modeler & Musician</p>
@@ -102,6 +104,19 @@
         </div>
     </div>
 </div>
+<!----------------Contact ------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>As of right now I will only accept messages on <span>Discord</span>: mirko4001</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <script>
 
@@ -117,6 +132,19 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0px";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
     }
 
 </script>
