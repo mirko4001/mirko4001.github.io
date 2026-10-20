@@ -1,5 +1,25 @@
 # React + TypeScript + Vite
 
+## Adding portfolio pictures
+
+Pictures are defined directly in [`src/App.tsx`](./src/App.tsx), in the
+`INITIAL_MODELS` array. Put the image in `public/imgs`, then add an object
+with its path, title, category, and order:
+
+```ts
+{
+  title: "My new model",
+  category: "Weapons",
+  imageUrl: "/imgs/my-model.png",
+  order: 5,
+  createdAt: Date.now(),
+},
+```
+
+After saving the file, run `npm run build` and deploy the site. There is no
+admin login or password system; editing the source code is the only way to
+change the gallery.
+
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
 Currently, two official plugins are available:
